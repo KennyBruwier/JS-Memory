@@ -65,14 +65,6 @@ function shuffleArray(array) {
     return array;
   }
 
-function removeAllChildNodes(parent)
-{
-    while (parent.firstChild)
-    {
-        parent.removeChild(parent.firstChild);
-    }
-}
-
 function clickOnCard(myId, myPicture)
 {
 
@@ -123,4 +115,13 @@ function checkPairs()
         myDiv.textContent = msg;
         myMsg.appendChild(myDiv);
     }
+    
+    function removeAllChildNodes(parent)
+    {
+        while (parent.firstChild)
+        {
+            parent.removeChild(parent.firstChild);
+        }
+    }
+
 }
