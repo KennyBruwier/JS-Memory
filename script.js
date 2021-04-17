@@ -115,13 +115,11 @@ function checkPairs()
         myDiv.textContent = msg;
         myMsg.appendChild(myDiv);
     }
-    
-    function removeAllChildNodes(parent)
+}
+function removeAllChildNodes(parent)
+{
+    while (parent.firstChild)
     {
-        while (parent.firstChild)
-        {
-            parent.removeChild(parent.firstChild);
-        }
+        parent.removeChild(parent.firstChild);
     }
-
 }
